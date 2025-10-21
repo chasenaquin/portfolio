@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const owner = 'your-username'; // Replace with your GitHub username
-    const repo = 'your-repo-name'; // Replace with your GitHub repository name
+    const owner = 'chasenaquin'; // Replace with your GitHub username
+    const repo = 'portfolio'; // Replace with your GitHub repository name
     const branch = 'main'; // Change if your GitHub Pages branch is different
 
     let index; // Lunr index
