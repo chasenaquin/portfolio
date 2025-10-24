@@ -2,11 +2,15 @@
 title: "Executive Onboarding Dashboard"
 ---
 
-# Cloud Migration Platform Documentation Site
+# Cloud Migration Platform
 
-This project now includes a **fully scaffolded structure** with placeholder files for every page listed in the navigation. Each page is ready for content population and automatic rendering in Just-the-docs.
+Welcome to the **Executive Onboarding Dashboard** for the Cloud Migration Platform. Use the cards below to navigate the documentation.
 
-## Executive Onboarding Dashboard (Interactive Cards with Hover, Icons & Light/Dark Mode)
+<!-- Light/Dark Mode Toggle -->
+<div style="text-align:center; margin-bottom:20px;">
+<button id="theme-toggle" style="padding:8px 16px; border:none; border-radius:6px; background:#00bfff; color:white; cursor:pointer; font-weight:bold;">Toggle Light/Dark Mode</button>
+</div>
+
 <style>
 .card-container {
   display: flex;
@@ -57,64 +61,70 @@ body[data-theme='light'] .card:hover {
 </style>
 
 <div class="card-container">
+  <div class="card">
+    <img src="assets/icons/product.svg" alt="Product Icon">
+    <h2>📦 Product</h2>
+    <p>Platform overview, features, business case, roadmap.</p>
+    <a href="product/overview.md">Explore →</a>
+  </div>
 
-<div class="card">
-<img src="assets/icons/product.svg" alt="Product Icon">
-<h2>📦 Product</h2>
-<p>Platform overview, features, business case, roadmap.</p>
-<a href="docs/product/overview.md">Explore →</a>
+  <div class="card">
+    <img src="assets/icons/architecture.svg" alt="Architecture Icon">
+    <h2>🧠 Architecture</h2>
+    <p>High-level architecture, AI orchestration, DR replication.</p>
+    <a href="architecture/high-level.md">Explore →</a>
+  </div>
+
+  <div class="card">
+    <img src="assets/icons/project.svg" alt="Project Icon">
+    <h2>🛠 Project</h2>
+    <p>Charter, planning, requirements, risk register.</p>
+    <a href="project/charter.md">Explore →</a>
+  </div>
+
+  <div class="card">
+    <img src="assets/icons/build.svg" alt="Build Icon">
+    <h2>🏗 Build</h2>
+    <p>API, UI/UX, infrastructure development.</p>
+    <a href="build/api/README.md">Explore →</a>
+  </div>
+
+  <div class="card">
+    <img src="assets/icons/test.svg" alt="Test Icon">
+    <h2>🧪 Test</h2>
+    <p>Test strategy, automation, quality assurance.</p>
+    <a href="test/strategy/README.md">Explore →</a>
+  </div>
+
+  <div class="card">
+    <img src="assets/icons/operate.svg" alt="Operate Icon">
+    <h2>⚙ Operate</h2>
+    <p>Runbooks, monitoring, support procedures.</p>
+    <a href="operate/runbooks/README.md">Explore →</a>
+  </div>
+
+  <div class="card">
+    <img src="assets/icons/release.svg" alt="Release Icon">
+    <h2>🚀 Release</h2>
+    <p>Deployment, Go-To-Market strategy, training.</p>
+    <a href="release/deployment/README.md">Explore →</a>
+  </div>
+
+  <div class="card">
+    <img src="assets/icons/leadership.svg" alt="Leadership Icon">
+    <h2>📊 Leadership</h2>
+    <p>Executive summaries, presentations, and reports.</p>
+    <a href="leadership/executive-summary.md">Explore →</a>
+  </div>
 </div>
 
-<div class="card">
-<img src="assets/icons/architecture.svg" alt="Architecture Icon">
-<h2>🧠 Architecture</h2>
-<p>High-level architecture, AI orchestration, DR replication.</p>
-<a href="docs/architecture/high-level.md">Explore →</a>
-</div>
-
-<div class="card">
-<img src="assets/icons/project.svg" alt="Project Icon">
-<h2>🛠 Project</h2>
-<p>Charter, planning, requirements, risk register.</p>
-<a href="docs/project/charter.md">Explore →</a>
-</div>
-
-<div class="card">
-<img src="assets/icons/build.svg" alt="Build Icon">
-<h2>🏗 Build</h2>
-<p>API, UI/UX, infrastructure development.</p>
-<a href="docs/build/api/README.md">Explore →</a>
-</div>
-
-<div class="card">
-<img src="assets/icons/test.svg" alt="Test Icon">
-<h2>🧪 Test</h2>
-<p>Test strategy, automation, quality assurance.</p>
-<a href="docs/test/strategy/README.md">Explore →</a>
-</div>
-
-<div class="card">
-<img src="assets/icons/operate.svg" alt="Operate Icon">
-<h2>⚙ Operate</h2>
-<p>Runbooks, monitoring, support procedures.</p>
-<a href="docs/operate/runbooks/README.md">Explore →</a>
-</div>
-
-<div class="card">
-<img src="assets/icons/release.svg" alt="Release Icon">
-<h2>🚀 Release</h2>
-<p>Deployment, Go-To-Market strategy, training.</p>
-<a href="docs/release/deployment/README.md">Explore →</a>
-</div>
-
-<div class="card">
-<img src="assets/icons/leadership.svg" alt="Leadership Icon">
-<h2>📊 Leadership</h2>
-<p>Executive summaries, presentations, and reports.</p>
-<a href="docs/leadership/executive-summary.md">Explore →</a>
-</div>
-
-</div>
-
-<p>This dashboard now includes **hover effects, light/dark mode, larger icons, and smooth transitions**, creating an immersive and visually guided executive onboarding experience.</p>
-
+<script>
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  if (currentTheme === 'light') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+});
+</script>
