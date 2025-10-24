@@ -86,7 +86,7 @@ body[data-theme='light'] .card:hover {
     <img src="assets/icons/build.svg" alt="Build Icon">
     <h2>🏗 Build</h2>
     <p>API, UI/UX, infrastructure development.</p>
-    <a href="build/api/README.md">Explore →</a>
+    <a href="build/README.md">Explore →</a>
   </div>
 
   <div class="card">
