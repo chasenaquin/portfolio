@@ -1,0 +1,48 @@
+title: "Cloud Migration Platform"
+remote_theme: just-the-docs/just-the-docs
+color_scheme: "dark"
+logo: "/assets/logo-square.svg"
+search_enabled: true
+
+collections:
+  docs:
+    output: true
+    permalink: "/:collection/:path/"
+
+just_the_docs:
+  navigation_structure:
+    - "📦 Product"
+      - "Overview": /docs/product/overview.md
+      - "Features": /docs/product/features.md
+      - "Business Case & ROI": /docs/product/business-case.md
+      - "Roadmap": /docs/product/roadmap.md
+    - "🧠 Architecture"
+      - "High-Level Architecture": /docs/architecture/high-level.md
+      - "AI Orchestration": /docs/architecture/ai-orchestration.md
+      - "DR Replication": /docs/architecture/dr-replication.md
+    - "🛠 Project"
+      - "Charter": /docs/project/charter.md
+      - "Planning": /docs/project/planning.md
+      - "Requirements": /docs/project/requirements.md
+      - "Risk Register": /docs/project/risk-register.md
+      - "Migration Journey": /docs/project/migration-journey.md
+    - "🏗 Build"
+      - "API": /docs/build/api/README.md
+      - "UI/UX": /docs/build/ui/README.md
+      - "Infrastructure": /docs/build/infra/README.md
+    - "🧪 Test"
+      - "Strategy": /docs/test/strategy/README.md
+      - "Automation": /docs/test/automation/README.md
+    - "⚙ Operate"
+      - "Runbooks": /docs/operate/runbooks/README.md
+      - "Monitoring": /docs/operate/monitoring/README.md
+      - "Support": /docs/operate/support/README.md
+    - "🚀 Release"
+      - "Deployment": /docs/release/deployment/README.md
+      - "Go-To-Market": /docs/release/gtm/README.md
+      - "Training": /docs/release/training/README.md
+    - "📊 Leadership"
+      - "Executive Summary": /docs/leadership/executive-summary.md
+      - "Presentations": /docs/leadership/presentations.md
+      - "Reports": /docs/leadership/reports.md
+

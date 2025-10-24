@@ -1,0 +1,82 @@
+# Cloud Migration Platform GitHub Pages Ready Structure
+
+This folder structure is fully ready to be pushed to GitHub and deployed as a GitHub Pages site using Just-the-docs.
+
+## Repository Structure
+```
+cloud-migration-site/
+├── _config.yml
+├── docs/
+│   ├── index.md                 # Homepage with dashboard HTML
+│   ├── product/
+│   │   ├── overview.md
+│   │   ├── features.md
+│   │   ├── business-case.md
+│   │   └── roadmap.md
+│   ├── architecture/
+│   │   ├── high-level.md
+│   │   ├── ai-orchestration.md
+│   │   └── dr-replication.md
+│   ├── project/
+│   │   ├── charter.md
+│   │   ├── planning.md
+│   │   ├── requirements.md
+│   │   ├── risk-register.md
+│   │   └── migration-journey.md
+│   ├── build/
+│   │   ├── api/README.md
+│   │   ├── ui/README.md
+│   │   └── infra/README.md
+│   ├── test/
+│   │   ├── strategy/README.md
+│   │   └── automation/README.md
+│   ├── operate/
+│   │   ├── runbooks/README.md
+│   │   ├── monitoring/README.md
+│   │   └── support/README.md
+│   ├── release/
+│   │   ├── deployment/README.md
+│   │   ├── gtm/README.md
+│   │   └── training/README.md
+│   └── leadership/
+│       ├── executive-summary.md
+│       ├── presentations.md
+│       └── reports.md
+├── assets/
+│   ├── logo-square.svg
+│   └── icons/
+│       ├── product.svg
+│       ├── architecture.svg
+│       ├── project.svg
+│       ├── build.svg
+│       ├── test.svg
+│       ├── operate.svg
+│       ├── release.svg
+│       └── leadership.svg
+└── README.md
+```
+
+## _config.yml (Example for GitHub Pages)
+```yaml
+title: "Cloud Migration Platform"
+remote_theme: just-the-docs/just-the-docs
+color_scheme: "dark"
+logo: "/assets/logo-square.svg"
+search_enabled: true
+collections:
+  docs:
+    output: true
+    permalink: "/:collection/:path/"
+just_the_docs:
+  navigation_structure: # full nested nav as previously defined
+```
+
+## Deployment Steps
+1. Push all files to `main` branch.
+2. Go to GitHub Settings → Pages.
+3. Set source to `main` branch and `/` or `/docs` depending on `_config.yml`.
+4. Wait a few minutes; site will be live at `https://<username>.github.io/<repo-name>/`.
+5. Test interactive dashboard and sidebar navigation.
+
+This structure ensures that **all placeholder pages, assets, icons, and the dashboard** are ready for GitHub Pages deployment with Just-the-docs.
+
